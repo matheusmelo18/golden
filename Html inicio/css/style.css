@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    background-color: rgb(22, 196, 240);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header img{
+    width: 180px;
+}
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li+li{
+    margin-left: 24px;
+}
+
+
+
+header a{
+    color: rgb(8, 17, 15);
+    text-decoration: none;
+    transition: color 0.4s;
+    font-size: 24px;
+}
+
+header a:hover{
+    color: rgb(255, 81, 0);
+}
+
+.up{
+    background-image: url(../images/redes2.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:center;
+    background-size: cover;
+    background-position: center 15%;
+    padding: 14px;
+    height: 540px;
+}
+
+.up h1{
+    color: rgb(6, 12, 11);
+    font-size:  36px;
+}
+
+.dots{
+    
+}
+
+.dots span{
+    display: inline-block;
+    background-color: rgb(22, 196, 240);
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+}
+
+.fun{
+    background-color: blue;
+    height: 560px;
+    align-items: center;
+    display: flex;
+    justify-content:center;
+    border-radius: 5px;
+    
+}
+
+.fun button{
+    height: 20px;
+    width: 140px;
+}
+
+
+
+
