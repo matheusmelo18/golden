@@ -3,7 +3,7 @@ h1, h2{
 }
 body{
     background-color: lightgray;
-
+}
 header{
     background-color: rgb(30, 50, 100);
     display: flex;
