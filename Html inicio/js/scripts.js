@@ -1,27 +1,27 @@
-const button = document.querySelector('.b-converter')
-const input = document.querySelector('.i-real')
-const url =  'https://economia.awesomeapi.com.br/last/'
-const coins = 'USD-BRL'
-const valorDigitado = document.querySelector('.real') 
-const valorDolar = document.querySelector('.dolar')
-fetch(url + coins)
-        .then(function(response){
-            return response.json()
-        })
-        .then(function(data){
-            const dolarReal = data.USDBRL
+const button = document.querySelector('.b-converter');
+const inputV = document.querySelector('.i-real');
+const inputC1 = document.querySelector('.moeda1');
+const inputC2 = document.querySelector('.moeda2');
+const select1 = document.querySelector('.moedas');
+const select2 = document.querySelector('.moedas2');
 
-            function pegarValorDoInput(){
-                console.log(input.value)
-            
-                document.getElementById('dol')
-                .innerHTML = parseFloat(input.value/dolarReal.bid).toLocaleString('eng',{
-                    style: 'currency' ,
-                    currency: 'USD'
-                })
-            }
-            
-            button.addEventListener('click',pegarValorDoInput)
-    
+const url = 'https://economia.awesomeapi.com.br/last/';
+
+button.addEventListener('click', function() {
+    const coins = select1.value + '-' + select2.value;
+
+    fetch(url + coins)
+        .then(function(response) {
+            return response.json();
         })
+        .then(function(data) {
+            const coin = select1.value + select2.value;
+            const conversao = data[coin];
+
+            document.getElementById('dol').innerHTML = parseFloat(inputV.value / conversao.bid).toLocaleString('en', {
+                style: 'currency',
+                currency: select1.value
+            });
+        });
+});
 
