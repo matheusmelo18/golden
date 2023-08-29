@@ -9,7 +9,7 @@ body{
 }
 
 header {
-    background-color: rgb(22, 196, 240);
+    background-color: rgb(243, 228, 228);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -41,7 +41,7 @@ header a:hover{
 }
 
 .up{
-    background-image: url(../images/redes2.jpg);
+    background-color: #90989e;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -55,6 +55,7 @@ header a:hover{
 .up h1{
     color: rgb(6, 12, 11);
     font-size:  36px;
+    
 }
 
 .dots{
@@ -72,7 +73,7 @@ header a:hover{
 }
 
 .fun{
-    background-color: blue;
+    background-color: #132d46;
     height: 560px;
     align-items: center;
     display: flex;
