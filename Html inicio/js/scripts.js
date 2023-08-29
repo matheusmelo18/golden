@@ -16,7 +16,6 @@ function formatDate(date, format) {
 	.replace('dd', date.getDate());
 }
 
-
 buttonC.addEventListener('click', function() {
     const coins = select1.value;
 
