@@ -1,0 +1,364 @@
+.mac-book-air-5,
+.mac-book-air-5 * {
+  box-sizing: border-box;
+}
+.mac-book-air-5 {
+  background: #132d46;
+  width: 1280px;
+  height: 832px;
+  position: relative;
+  overflow: hidden;
+}
+.result-box-dark {
+  border-radius: 0px;
+  position: absolute;
+  left: 800px;
+  top: 194px;
+  overflow: visible;
+}
+.quick-selection-box-dark {
+  position: absolute;
+  left: 62px;
+  top: 592px;
+  overflow: visible;
+}
+.main-box-dark {
+  position: absolute;
+  left: 62px;
+  top: 194px;
+  overflow: visible;
+}
+.quick-5-box-dark {
+  position: absolute;
+  left: 614px;
+  top: 622px;
+  overflow: visible;
+}
+.quick-1-box-dark {
+  position: absolute;
+  left: 106px;
+  top: 622px;
+  overflow: visible;
+}
+.quick-4-box-dark {
+  position: absolute;
+  left: 487px;
+  top: 622px;
+  overflow: visible;
+}
+.quick-3-dark {
+  position: absolute;
+  left: 360px;
+  top: 622px;
+  overflow: visible;
+}
+.quick-2-dark {
+  position: absolute;
+  left: 233px;
+  top: 622px;
+  overflow: visible;
+}
+.insert-value-box-dark {
+  position: absolute;
+  left: 103px;
+  top: 313px;
+  overflow: visible;
+}
+.from-box-dark {
+  position: absolute;
+  left: 103px;
+  top: 382px;
+  overflow: visible;
+}
+.to-box-dark {
+  position: absolute;
+  left: 448px;
+  top: 383px;
+  overflow: visible;
+}
+.converter-box-dark {
+  border-radius: 0px;
+  position: absolute;
+  left: 562px;
+  top: 447px;
+  overflow: visible;
+}
+.switch-button-dark {
+  position: absolute;
+  left: 412px;
+  top: 387px;
+  overflow: visible;
+}
+.upper-box-dark {
+  border-radius: 0px;
+  position: absolute;
+  left: 62px;
+  top: 92px;
+  overflow: visible;
+}
+.auto-box-dark {
+  position: absolute;
+  left: 480px;
+  top: 454px;
+  overflow: visible;
+}
+.dark-night-box-dark {
+  position: absolute;
+  left: 1148px;
+  top: 40px;
+  overflow: visible;
+}
+.auto-box-button-dark {
+  position: absolute;
+  left: 482px;
+  top: 456.04px;
+  overflow: visible;
+}
+.dark-mode-button-dark {
+  position: absolute;
+  left: 1178px;
+  top: 42px;
+  overflow: visible;
+}
+.logo-dark {
+  position: absolute;
+  left: 1108px;
+  top: 104px;
+  overflow: visible;
+}
+._1-00 {
+  color: #ffffff;
+  text-align: left;
+  font: 300 18px "Inter", sans-serif;
+  position: absolute;
+  left: 149px;
+  top: 635.5px;
+}
+._10-00 {
+  color: #ffffff;
+  text-align: left;
+  font: 300 18px "Inter", sans-serif;
+  position: absolute;
+  left: 270.5px;
+  top: 635.5px;
+}
+._20-00 {
+  color: #ffffff;
+  text-align: left;
+  font: 300 18px "Inter", sans-serif;
+  position: absolute;
+  left: 396px;
+  top: 635.5px;
+}
+._50-00 {
+  color: #ffffff;
+  text-align: left;
+  font: 300 18px "Inter", sans-serif;
+  position: absolute;
+  left: 523px;
+  top: 635.5px;
+}
+._100-00 {
+  color: #ffffff;
+  text-align: left;
+  font: 300 18px "Inter", sans-serif;
+  position: absolute;
+  left: 646px;
+  top: 635.5px;
+}
+.para {
+  color: #ffffff;
+  text-align: left;
+  font: 400 13px "Inter", sans-serif;
+  position: absolute;
+  left: 448px;
+  top: 361px;
+  width: 44px;
+  height: 25px;
+}
+.auto {
+  color: #ffffff;
+  text-align: left;
+  font: 400 13px "Inter", sans-serif;
+  position: absolute;
+  left: 483px;
+  top: 438px;
+  width: 44px;
+  height: 25px;
+}
+.switch-icon {
+  position: absolute;
+  left: 419px;
+  top: 395px;
+  overflow: visible;
+}
+.dark-mode-icon-dark {
+  position: absolute;
+  left: 1116px;
+  top: 42.5px;
+  overflow: visible;
+}
+.icon-arrow-ios-downward {
+  position: absolute;
+  left: 386px;
+  top: 398px;
+  overflow: visible;
+}
+.icon-arrow-ios-downward2 {
+  position: absolute;
+  left: 731px;
+  top: 399px;
+  overflow: visible;
+}
+.converter {
+  color: #ffffff;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  position: absolute;
+  left: 617px;
+  top: 458.5px;
+}
+.flag-1 {
+  width: 82px;
+  height: 54px;
+  position: absolute;
+  left: 833px;
+  top: 493px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+._0-0394 {
+  color: #ffffff;
+  text-align: left;
+  font: 600 60px "Inter", sans-serif;
+  position: absolute;
+  left: 833px;
+  top: 312px;
+}
+.usd {
+  color: #01c38e;
+  text-align: left;
+  font: 600 30px "Inter", sans-serif;
+  position: absolute;
+  left: 1053px;
+  top: 341px;
+}
+.cota-o-do-dia-wed-30-aug-2023-00-00-01-0000 {
+  color: #ffffff;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  position: absolute;
+  left: 846px;
+  top: 755px;
+}
+.flag-2 {
+  width: 82px;
+  height: 54px;
+  position: absolute;
+  left: 971px;
+  top: 493px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+._1-usd-5-00-brl {
+  color: #ffffff;
+  text-align: left;
+  font: 300 18px "Inter", sans-serif;
+  position: absolute;
+  left: 833px;
+  top: 435px;
+}
+._0-0000029-i-4-brl {
+  color: #ffffff;
+  text-align: left;
+  font: 300 18px "Inter", sans-serif;
+  position: absolute;
+  left: 833px;
+  top: 271px;
+}
+._1-brl-0-20000-usd {
+  color: #ffffff;
+  text-align: left;
+  font: 300 18px "Inter", sans-serif;
+  position: absolute;
+  left: 833px;
+  top: 412px;
+}
+. {
+  color: #ffffff;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  position: absolute;
+  left: 933px;
+  top: 511px;
+}
+.golden-currency-converter {
+  color: #01c38e;
+  text-align: left;
+  font: 600 25px "Inter", sans-serif;
+  position: absolute;
+  left: 62px;
+  top: 51px;
+  width: 563px;
+  height: 30px;
+}
+.de {
+  color: #ffffff;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  position: absolute;
+  left: 106px;
+  top: 361px;
+}
+.real-brasileiro-d-lar-americano {
+  color: #ffffff;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  text-decoration: underline;
+  position: absolute;
+  left: 106px;
+  top: 124px;
+}
+.real-brasileiro-euro {
+  color: #ffffff;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  text-decoration: underline;
+  position: absolute;
+  left: 356px;
+  top: 124px;
+}
+.real-brasileiro-libra-esterlina {
+  color: #ffffff;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  text-decoration: underline;
+  position: absolute;
+  left: 533px;
+  top: 124px;
+}
+.real-brasileiro-yuan-chin-s {
+  color: #ffffff;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  text-decoration: underline;
+  position: absolute;
+  left: 768px;
+  top: 124px;
+}
+.sele-o-r-pida {
+  color: #ffffff;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  position: absolute;
+  left: 109px;
+  top: 600px;
+  width: 133px;
+  height: 21px;
+}
+.valor {
+  color: #ffffff;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  position: absolute;
+  left: 106px;
+  top: 290px;
+}
