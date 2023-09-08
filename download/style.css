@@ -1,0 +1,522 @@
+.mac-book-air-4,
+.mac-book-air-4 * {
+  box-sizing: border-box;
+}
+.mac-book-air-4 {
+  background: #f0efec;
+  width: 100%;
+  height: 832px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.quick-selection-box {
+  background: #d9d9d9;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.5px;
+  width: 716px;
+  height: 96px;
+  position: absolute;
+  left: 62px;
+  top: 592px;
+}
+.main-box {
+  border-radius: 0px;
+  position: absolute;
+  left: 62px;
+  top: 194px;
+  overflow: visible;
+}
+.auto {
+  color: #000000;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  position: absolute;
+  left: 483px;
+  top: 438px;
+  width: 44px;
+  height: 25px;
+}
+.result-box {
+  background: rgba(217, 217, 217, 0.8);
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.6px;
+  width: 406px;
+  height: 598px;
+  position: absolute;
+  left: 800px;
+  top: 194px;
+}
+.flag-1 {
+  width: 82px;
+  height: 54px;
+  position: absolute;
+  left: 833px;
+  top: 493px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.quick-5-box {
+  background: #f0efec;
+  border-radius: 10px 0px 0px 0px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.5px;
+  width: 120px;
+  height: 49px;
+  position: absolute;
+  left: 614px;
+  top: 622px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.quick-1-box {
+  background: #f0efec;
+  border-radius: 0px 0px 10px 0px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.5px;
+  width: 120px;
+  height: 49px;
+  position: absolute;
+  left: 106px;
+  top: 622px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.quick-4-box {
+  background: #f0efec;
+  border-radius: 0px 10px 0px 10px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.5px;
+  width: 120px;
+  height: 49px;
+  position: absolute;
+  left: 487px;
+  top: 622px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.quick-3-box {
+  background: #f0efec;
+  border-radius: 10px 0px 10px 0px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.5px;
+  width: 120px;
+  height: 49px;
+  position: absolute;
+  left: 360px;
+  top: 622px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.quick-2-box {
+  background: #f0efec;
+  border-radius: 0px 10px 0px 10px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.5px;
+  width: 120px;
+  height: 49px;
+  position: absolute;
+  left: 233px;
+  top: 622px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.insert-value-box {
+  background: linear-gradient(to left, #f0efec, #f0efec),
+    linear-gradient(to left, #ffffff, #ffffff);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.5px;
+  width: 302px;
+  height: 39px;
+  position: absolute;
+  left: 103px;
+  top: 313px;
+}
+.to-box {
+  background: linear-gradient(to left, #f0efec, #f0efec),
+    linear-gradient(to left, #ffffff, #ffffff);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.5px;
+  width: 302px;
+  height: 39px;
+  position: absolute;
+  left: 448px;
+  top: 383px;
+}
+.from-box {
+  background: linear-gradient(to left, #f0efec, #f0efec),
+    linear-gradient(to left, #ffffff, #ffffff);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.5px;
+  width: 302px;
+  height: 39px;
+  position: absolute;
+  left: 103px;
+  top: 382px;
+}
+.converter-box {
+  background: linear-gradient(
+      to left,
+      rgba(128, 0, 0, 0.7),
+      rgba(128, 0, 0, 0.7)
+    ),
+    linear-gradient(to left, #ffffff, #ffffff);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.5px;
+  width: 188px;
+  height: 39px;
+  position: absolute;
+  left: 562px;
+  top: 449px;
+}
+.sele-o-r-pida {
+  color: #000000;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  position: absolute;
+  left: 109px;
+  top: 600px;
+  width: 131px;
+  height: 10px;
+}
+.valor {
+  color: #000000;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  position: absolute;
+  left: 106px;
+  top: 290px;
+}
+.de {
+  color: #000000;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  position: absolute;
+  left: 106px;
+  top: 361px;
+}
+.para {
+  color: #000000;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  position: absolute;
+  left: 448px;
+  top: 361px;
+  width: 44px;
+  height: 25px;
+}
+.switch-button {
+  background: #f0efec;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.5px;
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  left: 412px;
+  top: 387px;
+}
+.converter {
+  color: #000000;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  position: absolute;
+  left: 617px;
+  top: 460.5px;
+}
+._0-0394 {
+  color: #000000;
+  text-align: left;
+  font: 600 60px "Inter", sans-serif;
+  position: absolute;
+  left: 833px;
+  top: 312px;
+}
+.usd {
+  color: rgba(128, 0, 0, 0.9);
+  text-align: left;
+  font: 600 30px "Inter", sans-serif;
+  position: absolute;
+  left: 1053px;
+  top: 342px;
+}
+.upper-box {
+  border-radius: 0px;
+  position: absolute;
+  left: 64px;
+  top: 92px;
+  overflow: visible;
+}
+.real-brasileiro-yuan-chin-s {
+  color: #000000;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  text-decoration: underline;
+  position: absolute;
+  left: 768px;
+  top: 124px;
+}
+.real-brasileiro-euro {
+  color: #000000;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  text-decoration: underline;
+  position: absolute;
+  left: 356px;
+  top: 124px;
+}
+.real-brasileiro-libra-esterlina {
+  color: #000000;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  text-decoration: underline;
+  position: absolute;
+  left: 533px;
+  top: 124px;
+}
+.golden-currency-converter {
+  color: rgba(128, 0, 0, 0.7);
+  text-align: left;
+  font: 600 25px "Inter", sans-serif;
+  position: absolute;
+  left: 62px;
+  top: 51px;
+  width: 563px;
+  height: 30px;
+}
+.cota-o-do-dia-wed-30-aug-2023-00-00-01-0000 {
+  color: #000000;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  position: absolute;
+  left: 846px;
+  top: 755px;
+}
+.flag-2 {
+  width: 82px;
+  height: 54px;
+  position: absolute;
+  left: 971px;
+  top: 493px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+._1-usd-5-00-brl {
+  color: #000000;
+  text-align: left;
+  font: 300 18px "Inter", sans-serif;
+  position: absolute;
+  left: 833px;
+  top: 434px;
+}
+._0-0000029-i-4-brl {
+  color: #000000;
+  text-align: left;
+  font: 300 18px "Inter", sans-serif;
+  position: absolute;
+  left: 833px;
+  top: 271px;
+}
+._1-brl-0-20000-usd {
+  color: #1f0e0e;
+  text-align: left;
+  font: 300 18px "Inter", sans-serif;
+  position: absolute;
+  left: 833px;
+  top: 411px;
+}
+.logo {
+  width: 117px;
+  height: 102px;
+  position: absolute;
+  left: 1110px;
+  top: 104px;
+}
+.real-brasileiro-d-lar-americano {
+  color: #000000;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  text-decoration: underline;
+  position: absolute;
+  left: 106px;
+  top: 124px;
+}
+/*.dark-mode-box {
+  border-radius: 0px;
+  position: absolute;
+  left: 1148px;
+  top: 40px;
+  overflow: visible;
+}*/
+.toggle-switch {
+  position: relative;
+  left: 1148px;
+  top: 22px;
+  width: 58px;
+  height: 30px;
+}
+
+.hidden-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 58px;
+  height: 30px;
+  background-color: #D9D9D9;
+  border: 1px solid black;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-label::before {
+  content: '';
+  position: absolute;
+  top: 1.5px;
+  left: 1.5px;
+  width: 25px;
+  height: 25px;
+  background-color: rgba(128, 0, 0, 0.7);
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0px;
+  transition: transform 0.3s ease;
+}
+
+.hidden-checkbox:checked + .toggle-label {
+  background-color: #28a745; /* Cor de fundo quando está ligado */
+}
+
+.hidden-checkbox:checked + .toggle-label::before {
+  transform: translateX(28px);
+}
+
+.switch-box {
+  border-radius: 0px;
+  position: absolute;
+  left: 480px;
+  top: 454px;
+  overflow: visible;
+}
+/*.dark-mode-button {
+  background: rgba(128, 0, 0, 0.7);
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.5px;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 1150px;
+  top: 42px;
+}*/
+.switch-button2 {
+  position: absolute;
+  left: 482px;
+  top: 456.04px;
+  overflow: visible;
+}
+._1-00 {
+  color: #000000;
+  text-align: left;
+  font: 300 18px "Inter", sans-serif;
+  position: absolute;
+  left: 149px;
+  top: 635.5px;
+}
+._10-00 {
+  color: #000000;
+  text-align: left;
+  font: 300 18px "Inter", sans-serif;
+  position: absolute;
+  left: 270.5px;
+  top: 635.5px;
+}
+._20-00 {
+  color: #000000;
+  text-align: left;
+  font: 300 18px "Inter", sans-serif;
+  position: absolute;
+  left: 396px;
+  top: 635.5px;
+}
+._50-00 {
+  color: #000000;
+  text-align: left;
+  font: 300 18px "Inter", sans-serif;
+  position: absolute;
+  left: 523px;
+  top: 635.5px;
+}
+._100-00 {
+  color: #000000;
+  text-align: left;
+  font: 300 18px "Inter", sans-serif;
+  position: absolute;
+  left: 646px;
+  top: 635.5px;
+}
+.group {
+  position: absolute;
+  left: 419px;
+  top: 395px;
+  overflow: visible;
+}
+. {
+  color: #000000;
+  text-align: left;
+  font: 300 13px "Inter", sans-serif;
+  position: absolute;
+  left: 933px;
+  top: 511px;
+}
+.dark-mode-icon {
+  position: absolute;
+  inset: 0;
+}
+.vector3 {
+  opacity: 0;
+  position: absolute;
+  left: 1141px;
+  top: 67.5px;
+  overflow: visible;
+}
+.group2 {
+  position: absolute;
+  left: 1118.08px;
+  top: 44.58px;
+  overflow: visible;
+}
+.icon-arrow-ios-downward {
+  position: absolute;
+  left: 386px;
+  top: 398px;
+  overflow: visible;
+}
+.icon-arrow-ios-downward2 {
+  position: absolute;
+  left: 386px;
+  top: 398px;
+  overflow: visible;
+}
+.icon-arrow-ios-downward3 {
+  position: absolute;
+  left: 731px;
+  top: 399px;
+  overflow: visible;
+}
