@@ -1,9 +1,10 @@
 
-const buttonC = document.querySelector('.b-converter');
+const buttonC = document.querySelector('.converter-box');
 const buttonS = document.querySelector('.b-switch')
 const inputV = document.querySelector('.i-real');
 const select1 = document.querySelector('.moedas');
 const select2 = document.querySelector('.moedas2');
+const autoMode = 0;
 
 
 const url = 'https://v6.exchangerate-api.com/v6/2b28f847f6610668cfba5704/latest/'
@@ -56,11 +57,33 @@ buttonS.addEventListener('click', function() {
 function trocarCSS() {
     var link = document.getElementById('css-link');
     if (link.href.endsWith('style.css')) {
-        link.href = 'style.css';
-    } else {
         link.href = 'style2.css';
+    } else {
+        link.href = 'style.css';
     }
+    var imagem = document.getElementById("logo_l");
+            if (imagem.src.endsWith("logo.png")) {
+                imagem.src = "logoD.png";
+                imagem.alt = "logo 2";
+            } else {
+                imagem.src = "logo.png";
+                imagem.alt = "logo 1";
+            }
+            
+
 }
+
+function toggleButton() {
+    const switchElement = document.getElementById("switch-toggle");
+    const botaoElement = document.getElementById("convert");
+    botaoElement.disabled = switchElement.checked;
+   
+    if(autoMode == 0){
+        autoMode =1;
+    }else{autoMode=0;}
+}
+
+
 
 
 $(document).ready(function () {
