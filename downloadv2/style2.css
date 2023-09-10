@@ -210,6 +210,22 @@ select {
   left: 103px;
   top: 382px;
 }
+
+.select2 #select2-data-2-mjf8{
+  background: linear-gradient(to left, #f0efec, #f0efec),
+    linear-gradient(to left, #ffffff, #ffffff);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.5px;
+  width: 302px;
+  height: 39px;
+  position: absolute;
+  left: 448px;
+  top: 383px;
+}
+
+
 .converter-box {
   background: linear-gradient(
       to left,
@@ -297,13 +313,23 @@ button:disabled {
 }
 
 
+
+
 .v-conversao {
   color: #ffffff;
   text-align: left;
   font: 600 60px "Inter", sans-serif;
   position: absolute;
   left: 833px;
-  top: 312px;
+  top: 324px;
+}
+#v-convert{
+  display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    transition: font-size 0.2s ease;
 }
 .usd {
   color: #01c38e;
@@ -367,7 +393,7 @@ button:disabled {
   top: 493px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-._1-usd-5-00-brl {
+.from-to {
   color: #ffffff;
   text-align: left;
   font: 300 18px "Inter", sans-serif;
@@ -375,15 +401,15 @@ button:disabled {
   left: 833px;
   top: 434px;
 }
-._0-0000029-i-4-brl {
+.to-equals {
   color: #ffffff;
   text-align: left;
   font: 300 18px "Inter", sans-serif;
   position: absolute;
   left: 833px;
-  top: 271px;
+  top: 295px;
 }
-._1-brl-0-20000-usd {
+.to-from {
   color: #ffffff;
   text-align: left;
   font: 300 18px "Inter", sans-serif;
