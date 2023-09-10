@@ -9,6 +9,7 @@
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+  transition: background-color 0.4s, color 0.4s;
 }
 .quick-selection-box {
   background: rgba(114, 109, 110, 0.7);
@@ -82,6 +83,9 @@
   border-style: solid;
   border-color: #ffffff;
   border-width: 0.5px;
+  color: #ffffff;
+  font: 300 18px "Inter", sans-serif;
+  cursor: pointer;
   width: 120px;
   height: 49px;
   position: absolute;
@@ -95,6 +99,9 @@
     border-style: solid;
     border-color: #ffffff;
     border-width: 0.5px;
+    color: #ffffff;
+  font: 300 18px "Inter", sans-serif;
+  cursor: pointer;
   width: 120px;
   height: 49px;
   position: absolute;
@@ -108,6 +115,9 @@
     border-style: solid;
     border-color: #ffffff;
     border-width: 0.5px;
+    color: #ffffff;
+  font: 300 18px "Inter", sans-serif;
+  cursor: pointer;
   width: 120px;
   height: 49px;
   position: absolute;
@@ -121,6 +131,9 @@
     border-style: solid;
     border-color: #ffffff;
     border-width: 0.5px;
+    color: #ffffff;
+  font: 300 18px "Inter", sans-serif;
+  cursor: pointer;
   width: 120px;
   height: 49px;
   position: absolute;
@@ -134,6 +147,9 @@
     border-style: solid;
     border-color: #ffffff;
     border-width: 0.5px;
+    color: #ffffff;
+  font: 300 18px "Inter", sans-serif;
+  cursor: pointer;
   width: 120px;
   height: 49px;
   position: absolute;
@@ -146,14 +162,28 @@
     linear-gradient(to left, #ffffff, #ffffff);
   border-radius: 10px;
   border-style: solid;
-  border-color: #000000;
+  border-color: #ffffff;
   border-width: 0.5px;
   width: 302px;
   height: 39px;
   position: absolute;
   left: 103px;
   top: 313px;
+  
 }
+input {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 0px 0;
+  box-sizing: border-box;
+}
+select {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 0px 0;
+  box-sizing: border-box;
+}
+
 .to-box {
   background: linear-gradient(to left, #f0efec, #f0efec),
     linear-gradient(to left, #ffffff, #ffffff);
@@ -191,12 +221,31 @@
   border-style: solid;
   border-color: #ffffff;
   border-width: 0.5px;
+  color: #ffffff;
   width: 188px;
   height: 39px;
   position: absolute;
   left: 562px;
   top: 449px;
+  cursor: pointer;
 }
+.converter-box:hover{
+  background: linear-gradient(
+    to left,
+    rgb(62, 143, 121),
+    rgb(89, 196, 171)
+  ),
+  linear-gradient(to left, #ffffff, #ffffff);
+}
+
+button:disabled {
+  background-color: #ccc; 
+  color: #999; 
+  cursor: not-allowed; 
+  
+}
+
+
 .sele-o-r-pida {
   color: #ffffff;
   text-align: left;
@@ -244,16 +293,11 @@
   position: absolute;
   left: 412px;
   top: 387px;
+  
 }
-.converter {
-  color: #ffffff;
-  text-align: left;
-  font: 300 13px "Inter", sans-serif;
-  position: absolute;
-  left: 617px;
-  top: 460.5px;
-}
-._0-0394 {
+
+
+.v-conversao {
   color: #ffffff;
   text-align: left;
   font: 600 60px "Inter", sans-serif;
@@ -266,7 +310,7 @@
   text-align: left;
   font: 600 30px "Inter", sans-serif;
   position: absolute;
-  left: 1070px;
+  left: 1025px;
   top: 342px;
 }
 
@@ -373,7 +417,7 @@
 .toggle-switch {
   position: relative;
   left: 1148px;
-  top: 21px;
+  top: -8px;
   width: 58px;
   height: 30px;
   
@@ -446,7 +490,7 @@
   width: 58px;
   height: 30px;
   left: 480px;
-  top: 454px;
+  top: 435px;
 }
 
 .hidden-checkbox2 {
@@ -484,12 +528,7 @@
 .hidden-checkbox2:checked + .toggle-label2::before {
   transform: translateX(25px);
 }
-/*.switch-button2 {
-  position: absolute;
-  left: 482px;
-  top: 456.04px;
-  overflow: visible;
-}*/
+
 ._1-00 {
   color: #ffffff;
   text-align: left;
@@ -535,18 +574,19 @@
   left: 419px;
   top: 395px;
   overflow: visible;
+  cursor: pointer;
 }
-. {
-  color: #ffffff;
-  text-align: left;
-  font: 300 13px "Inter", sans-serif;
+.dark-mode-icon-dark {
   position: absolute;
-  left: 933px;
-  top: 511px;
+  left: 1117px;
+  top: 40.5px;
+  overflow: visible;
 }
+
 .dark-mode-icon {
   position: absolute;
   inset: 0;
+  display: none;
 }
 .vector3 {
   opacity: 0;
@@ -554,6 +594,7 @@
   left: 1141px;
   top: 67.5px;
   overflow: visible;
+  
 }
 .group2 {
   position: absolute;
@@ -579,3 +620,16 @@
   top: 399px;
   overflow: visible;
 }
+.arrowright {
+  border: solid rgb(255, 255, 255);
+  border-width: 0px 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  position:relative;
+  left: 935px;
+  top: 511px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+
