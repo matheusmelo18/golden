@@ -9,6 +9,7 @@
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+  transition: background-color 0.4s, color 0.4s;
 }
 .quick-selection-box {
   background: #d9d9d9;
@@ -71,12 +72,16 @@
   border-style: solid;
   border-color: #000000;
   border-width: 0.5px;
+  color: #000000;
+  font: 300 18px "Inter", sans-serif;
+  cursor: pointer;
   width: 120px;
   height: 49px;
   position: absolute;
   left: 614px;
   top: 622px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 .quick-1-box {
   background: #f0efec;
@@ -84,12 +89,15 @@
   border-style: solid;
   border-color: #000000;
   border-width: 0.5px;
+  color: #000000;
+  font: 300 18px "Inter", sans-serif;
   width: 120px;
   height: 49px;
   position: absolute;
   left: 106px;
   top: 622px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 .quick-4-box {
   background: #f0efec;
@@ -97,12 +105,15 @@
   border-style: solid;
   border-color: #000000;
   border-width: 0.5px;
+  color: #000000;
+  font: 300 18px "Inter", sans-serif;
   width: 120px;
   height: 49px;
   position: absolute;
   left: 487px;
   top: 622px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 .quick-3-box {
   background: #f0efec;
@@ -110,12 +121,15 @@
   border-style: solid;
   border-color: #000000;
   border-width: 0.5px;
+  color: #000000;
+  font: 300 18px "Inter", sans-serif;
   width: 120px;
   height: 49px;
   position: absolute;
   left: 360px;
   top: 622px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 .quick-2-box {
   background: #f0efec;
@@ -123,12 +137,15 @@
   border-style: solid;
   border-color: #000000;
   border-width: 0.5px;
+  color: #000000;
+  font: 300 18px "Inter", sans-serif;
   width: 120px;
   height: 49px;
   position: absolute;
   left: 233px;
   top: 622px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 .insert-value-box {
   background: linear-gradient(to left, #f0efec, #f0efec),
@@ -142,6 +159,19 @@
   position: absolute;
   left: 103px;
   top: 313px;
+  
+}
+input {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 0px 0;
+  box-sizing: border-box;
+}
+select {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 0px 0;
+  box-sizing: border-box;
 }
 .to-box {
   background: linear-gradient(to left, #f0efec, #f0efec),
@@ -185,7 +215,24 @@
   position: absolute;
   left: 562px;
   top: 449px;
+  cursor: pointer;
 }
+
+.converter-box:hover{
+  background: linear-gradient(
+    to left,
+    rgba(128, 0, 0, 0.7),
+      rgba(110, 76, 76, 0.7)
+  ),
+  linear-gradient(to left, #ffffff, #ffffff);
+}
+button:disabled {
+  background-color: #ccc; 
+  color: #999; 
+  cursor: not-allowed; 
+  
+}
+
 .sele-o-r-pida {
   color: #000000;
   text-align: left;
@@ -234,15 +281,8 @@
   left: 412px;
   top: 387px;
 }
-.converter {
-  color: #000000;
-  text-align: left;
-  font: 300 13px "Inter", sans-serif;
-  position: absolute;
-  left: 617px;
-  top: 460.5px;
-}
-._0-0394 {
+
+.v-conversao {
   color: #000000;
   text-align: left;
   font: 600 60px "Inter", sans-serif;
@@ -255,7 +295,7 @@
   text-align: left;
   font: 600 30px "Inter", sans-serif;
   position: absolute;
-  left: 1053px;
+  left: 1025px;
   top: 342px;
 }
 .upper-box {
@@ -279,6 +319,7 @@
   position: absolute;
   left: 768px;
   top: 124px;
+  cursor: pointer;
 }
 .real-brasileiro-euro {
   color: #000000;
@@ -374,7 +415,7 @@
 .toggle-switch {
   position: relative;
   left: 1148px;
-  top: 21px;
+  top: -8px;;
   width: 58px;
   height: 30px;
 }
@@ -394,6 +435,8 @@
   border-radius: 15px;
   transition: background-color 0.3s ease;
 }
+
+
 
 .toggle-label::before {
   content: '';
@@ -438,7 +481,7 @@
   width: 58px;
   height: 30px;
   left: 480px;
-  top: 454px;
+  top: 435px;
 }
 
 .hidden-checkbox2 {
@@ -530,18 +573,18 @@
   left: 419px;
   top: 395px;
   overflow: visible;
-}
-. {
-  color: #000000;
-  text-align: left;
-  font: 300 13px "Inter", sans-serif;
-  position: absolute;
-  left: 933px;
-  top: 511px;
+  cursor: pointer;
 }
 .dark-mode-icon {
   position: absolute;
   inset: 0;
+}
+.dark-mode-icon-dark {
+  position: absolute;
+  left: 1116px;
+  top: 42.5px;
+  overflow: visible;
+  display: none;
 }
 .vector3 {
   opacity: 0;
@@ -574,3 +617,15 @@
   top: 399px;
   overflow: visible;
 }
+.arrowright {
+  border: solid black;
+  border-width: 0px 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  position:relative;
+  left: 935px;
+  top: 511px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
