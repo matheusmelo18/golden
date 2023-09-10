@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <link id="css-link" rel="stylesheet" type="text/css" href="style.css">
+    
 
     <style>
       a,
@@ -37,7 +38,8 @@
       <div class="auto">Auto</div>
       <div class="result-box"></div>
       <img class="flag-1" src="flag-1.png" />
-      
+
+      <div class="usd"></div>
       
       
       <div class="sele-o-r-pida">Seleção rápida:<br /></div>
@@ -46,8 +48,7 @@
       <div class="para">Para:</div>
       <div class="switch-button"></div>
       
-      <div class="v-conversao">0.00</div>
-      <div class="usd">USD</div>
+      <div class="v-conversao"id="v-convert">0.00</div>
       <div class="upper-box"></div>
       
       <div class="real-brasileiro-euro">Real Brasileiro -&gt; Euro</div>
@@ -59,9 +60,9 @@
         Cotação do dia Wed, 30 Aug 2023 00:00:01 +0000
       </div>
       <img class="flag-2" src="flag-2.png" />
-      <div class="_1-usd-5-00-brl">1 USD = 5,00 BRL</div>
-      <div class="_0-0000029-i-4-brl">0,0000029I4 BRL =</div>
-      <div class="_1-brl-0-20000-usd">1 BRL = 0,20000 USD</div>
+      <div class="from-to">1 USD = 5,00 BRL</div>
+      <div class="to-equals">0,0000029I4 BRL =</div>
+      <div class="to-from">1 BRL = 0,20000 USD</div>
       <img id="logo_l" class="logo" src="logo.png" alt="logo 1" />
       <div class="real-brasileiro-d-lar-americano">
         Real Brasileiro -&gt; Dólar Americano
@@ -351,7 +352,7 @@
         <option value="PLN"> PLN - Złoty Polonês  </option>
         </select>
     
-        <select class="to-box"> 
+        <select class="to-box" name="coins" id="to"> 
           <option value="">Select a Option...</option>
           <option value="AFN"> AFN - Afegane Afegão </option>
           <option value="MGA"> MGA - Ariary Malgaxe  </option>
