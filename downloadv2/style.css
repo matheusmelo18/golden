@@ -161,6 +161,7 @@
   top: 313px;
   
 }
+
 input {
   width: 100%;
   padding: 12px 10px;
@@ -172,6 +173,7 @@ select {
   padding: 12px 10px;
   margin: 0px 0;
   box-sizing: border-box;
+  
 }
 .to-box {
   background: linear-gradient(to left, #f0efec, #f0efec),
@@ -195,10 +197,13 @@ select {
   border-width: 0.5px;
   width: 302px;
   height: 39px;
-  position: absolute;
+  position:absolute;
   left: 103px;
   top: 382px;
 }
+
+
+
 .converter-box {
   background: linear-gradient(
       to left,
@@ -290,6 +295,15 @@ button:disabled {
   left: 833px;
   top: 312px;
 }
+
+#v-convert{
+  display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    transition: font-size 0.2s ease;
+}
 .usd {
   color: rgba(128, 0, 0, 0.9);
   text-align: left;
@@ -365,7 +379,7 @@ button:disabled {
   top: 493px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-._1-usd-5-00-brl {
+.from-to {
   color: #000000;
   text-align: left;
   font: 300 18px "Inter", sans-serif;
@@ -373,7 +387,7 @@ button:disabled {
   left: 833px;
   top: 434px;
 }
-._0-0000029-i-4-brl {
+.to-equals{
   color: #000000;
   text-align: left;
   font: 300 18px "Inter", sans-serif;
@@ -381,7 +395,7 @@ button:disabled {
   left: 833px;
   top: 271px;
 }
-._1-brl-0-20000-usd {
+.to-from {
   color: #1f0e0e;
   text-align: left;
   font: 300 18px "Inter", sans-serif;
