@@ -561,7 +561,7 @@ button:disabled {
 
 
 .hidden-checkbox2:checked + .toggle-label2::before {
-  transform: translateX(25px);
+  transform: translateX(28px);
 }
 
 ._1-00 {
