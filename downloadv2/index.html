@@ -37,7 +37,7 @@
 
       <div class="auto">Auto</div>
       <div class="result-box"></div>
-      <img class="flag-1" src="flag-1.png" />
+      
 
       <div class="usd"></div>
       
@@ -59,10 +59,11 @@
       <div class="cota-o-do-dia-wed-30-aug-2023-00-00-01-0000">
         Cotação do dia Wed, 30 Aug 2023 00:00:01 +0000
       </div>
-      <img class="flag-2" src="flag-2.png" />
-      <div class="from-to">1 USD = 5,00 BRL</div>
-      <div class="to-equals">0,0000029I4 BRL =</div>
-      <div class="to-from">1 BRL = 0,20000 USD</div>
+      <img class="flag-1" />
+      <img class="flag-2"  />
+      <div class="from-to" id="f-t">1 USD = 5,00 BRL</div>
+      <div class="to-equals" id="to-v">Insira um valor </div>
+      <div class="to-from" id="t-f">1 BRL = 0,20000 USD</div>
       <img id="logo_l" class="logo" src="logo.png" alt="logo 1" />
       <div class="real-brasileiro-d-lar-americano">
         Real Brasileiro -&gt; Dólar Americano
@@ -518,12 +519,12 @@
           </select>
       
 
-          <button class="quick-5-box">100,00</button>
-          <button class="quick-1-box">1,00</button>
-          <button class="quick-4-box">50,00</button>
-          <button class="quick-3-box">20,00</button>
-          <button class="quick-2-box">10,00</button> 
-      <input class="insert-value-box"></input>
+          <button class="quick-5-box" onclick="quick1(100.00)">100,00</button>
+<button class="quick-1-box" onclick="quick1(1.00)">1,00</button>
+<button class="quick-4-box" onclick="quick1(50.00)">50,00</button>
+<button class="quick-3-box" onclick="quick1(20.00)">20,00</button>
+<button class="quick-2-box" onclick="quick1(10.00)">10,00</button>
+<input class="insert-value-box" id="i-value-box"></input>
       <div class="toggle-switch2">
         <input type="checkbox" id="switch-toggle" class="hidden-checkbox2" onclick="toggleButton()">
         <label for="switch-toggle" class="toggle-label2">
