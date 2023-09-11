@@ -7,14 +7,14 @@ const select2 = document.querySelector('.from-box');
 var autoMode = false;
 
 
-const url = 'https://v6.exchangerate-api.com/v6/2b28f847f6610668cfba5704/latest/'
+const url = 'https://v6.exchangerate-api.com/v6/7aa6b8fe235ff30eb01826e8/latest/'
 
 
 
 function fetchAndConvert() {
     const coins = select1.value;
 
-
+    converterParaNumero(inputV.value)
     fetch(url + coins)
         .then(function(response) {
             return response.json();
@@ -53,23 +53,27 @@ function fetchAndConvert() {
             document.getElementById('t-f').innerHTML = parseFloat(1).toLocaleString('en', {
                 style: 'currency',
                 currency: select1.value,
-                currencyDisplay: 'code'
+                currencyDisplay: 'code',
+                maximumFractionDigits: 5
             })+ " = "+parseFloat(conversao).toLocaleString('en', {
                 style: 'currency',
                 currency: select2.value,
-                currencyDisplay: 'code'
+                currencyDisplay: 'code',
+                maximumFractionDigits: 5
             });
             document.getElementById('f-t').innerHTML = parseFloat(1).toLocaleString('en', {
                 style: 'currency',
                 currency: select2.value,
-                currencyDisplay: 'code'
+                currencyDisplay: 'code',
+                maximumFractionDigits: 5
             })+ " = "+parseFloat(1/conversao).toLocaleString('en', {
                 style: 'currency',
                 currency: select1.value,
-                currencyDisplay: 'code'
+                currencyDisplay: 'code',
+                maximumFractionDigits: 5
             }); 
-            setFlagByCountryCode1(select1.value);
-            setFlagByCountryCode2(select2.value);     
+            setFlagByCountryCode2(select1.value);
+            setFlagByCountryCode1(select2.value);     
         });
             
 };
@@ -233,6 +237,35 @@ function setFlagByCountryCode2(countryCode) {
     flagElement.setAttribute('alt', countryCode);
 }
 
+function updateCurrencySelects(fromCurrency, toCurrency) {
+    // Obtém referências para os elementos <select> pelo ID
+    const fromSelect = document.getElementById('from');
+    const toSelect = document.getElementById('to');
 
-
-
+    // Define as opções selecionadas nos elementos <select>
+    select1.selectedIndex = fromCurrency;
+    select1.selectedIndex = toCurrency;
+}
+function validarNumero(valor) {
+    // Use uma expressão regular para verificar se o valor é válido
+    // ^ indica que a correspondência deve começar no início da string
+    // \d+ corresponde a um ou mais dígitos
+    // (?:[.,]\d+)? corresponde a um ponto ou vírgula seguido por um ou mais dígitos (parte decimal), que é opcional (o ? no final)
+    // $ indica que a correspondência deve terminar no final da string
+    const regex = /^\d+(?:[.,]\d+)?$/;
+  
+    // Testa se o valor corresponde à expressão regular
+    return regex.test(valor);
+  }
+  
+  // Função de exemplo para converter uma string em número (caso seja válida)
+  function converterParaNumero(texto) {
+    if (validarNumero(texto)) {
+      // Remove vírgulas e substitui pontos por pontos decimais
+      const valorFormatado = texto.replace(',', '.');
+      return parseFloat(valorFormatado);
+    } else {
+      // Retorna NaN (não é um número) se a entrada for inválida
+      return NaN;
+    }
+  }
