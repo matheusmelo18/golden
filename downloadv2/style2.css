@@ -352,6 +352,7 @@ button:disabled {
   position: absolute;
   left: 768px;
   top: 124px;
+  cursor: pointer;
 }
 .br-eu {
   color: #ffffff;
@@ -361,6 +362,7 @@ button:disabled {
   position: absolute;
   left: 356px;
   top: 124px;
+  cursor: pointer;
 }
 .br-le{
   color: #ffffff;
@@ -370,6 +372,7 @@ button:disabled {
   position: absolute;
   left: 533px;
   top: 124px;
+  cursor: pointer;
 }
 .golden-currency-converter {
   color: #01c38e;
@@ -381,7 +384,7 @@ button:disabled {
   width: 563px;
   height: 30px;
 }
-.cota-o-do-dia-wed-30-aug-2023-00-00-01-0000 {
+.cotação {
   color: #ffffff;
   text-align: left;
   font: 300 13px "Inter", sans-serif;
@@ -437,6 +440,7 @@ button:disabled {
   position: absolute;
   left: 106px;
   top: 124px;
+  cursor: pointer;
 }
 /*.dark-mode-box {
   border-radius: 0px;
@@ -654,7 +658,7 @@ button:disabled {
 .arrowright {
   border: solid rgb(255, 255, 255);
   border-width: 0px 3px 3px 0;
-  display: inline-block;
+  display: none;
   padding: 3px;
   position:relative;
   left: 935px;
