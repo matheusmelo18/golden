@@ -344,6 +344,7 @@ button:disabled {
   position: absolute;
   left: 356px;
   top: 124px;
+  cursor: pointer;
 }
 .br-le {
   color: #000000;
@@ -353,6 +354,7 @@ button:disabled {
   position: absolute;
   left: 533px;
   top: 124px;
+  cursor: pointer;
 }
 .golden-currency-converter {
   color: rgba(128, 0, 0, 0.7);
@@ -364,7 +366,7 @@ button:disabled {
   width: 563px;
   height: 30px;
 }
-.cota-o-do-dia-wed-30-aug-2023-00-00-01-0000 {
+.cotação {
   color: #000000;
   text-align: left;
   font: 300 13px "Inter", sans-serif;
@@ -420,6 +422,7 @@ button:disabled {
   position: absolute;
   left: 106px;
   top: 124px;
+  cursor: pointer;
 }
 /*.dark-mode-box {
   border-radius: 0px;
@@ -636,7 +639,7 @@ button:disabled {
 .arrowright {
   border: solid black;
   border-width: 0px 3px 3px 0;
-  display: inline-block;
+  display: none;
   padding: 3px;
   position:relative;
   left: 935px;
