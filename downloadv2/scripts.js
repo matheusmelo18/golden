@@ -1,7 +1,7 @@
 const switchElement = document.getElementById("switch-toggle");
 const buttonC = document.querySelector('.converter-box');
 const buttonS = document.querySelector('.svg-button');
-const inputV = document.querySelector('.insert-value-box');
+var inputV = document.querySelector('.insert-value-box');
 const select1 = document.querySelector('.to-box');
 const select2 = document.querySelector('.from-box');
 var autoMode = false;
@@ -14,17 +14,26 @@ const url = 'https://v6.exchangerate-api.com/v6/7aa6b8fe235ff30eb01826e8/latest/
 function fetchAndConvert() {
     const coins = select1.value;
 
-    converterParaNumero(inputV.value)
+    inputV.value = inputV.value.replace("-","")
+    inputV.value = inputV.value.replace(",",".")
+    parseFloat(inputV.value);
+    
     fetch(url + coins)
         .then(function(response) {
             return response.json();
         })
         .then(function(data) {
             console.log(data);
+            
             const coin =  select2.value;
+            const newCotacao = data.time_last_update_unix;
             const conversao = data.conversion_rates[coin];
             const inputValue = parseFloat(inputV.value);
             const convertedValue = inputValue / conversao;
+
+            var date = new Date(newCotacao*1000)
+
+            document.getElementById('cota').innerHTML ="Cotação do Dia: "+ date.toLocaleDateString("pt-BR") +" Horas: " +date.toLocaleTimeString("pt-BR") + "<br>";
 
             function determinarCasasDecimais(valor) {
                 const valorAbsoluto = Math.abs(valor);
@@ -228,6 +237,8 @@ function setFlagByCountryCode2(countryCode) {
 
     // Selecione o elemento da bandeira
     const flagElement = document.querySelector('.flag-2');
+    const arrow = document.getElementById('arrow');
+    arrow.style.display = 'inline-block';
 
     // Defina o atributo 'src' do elemento da bandeira com o URL da imagem da bandeira
     flagElement.setAttribute('src', flagImageUrl);
@@ -239,33 +250,10 @@ function setFlagByCountryCode2(countryCode) {
 
 function updateCurrencySelects(fromCurrency, toCurrency) {
     // Obtém referências para os elementos <select> pelo ID
-    const fromSelect = document.getElementById('from');
-    const toSelect = document.getElementById('to');
 
     // Define as opções selecionadas nos elementos <select>
-    select1.selectedIndex = fromCurrency;
-    select1.selectedIndex = toCurrency;
+    select2.value = fromCurrency;
+    select1.value = toCurrency;
+    fetchAndConvert();
 }
-function validarNumero(valor) {
-    // Use uma expressão regular para verificar se o valor é válido
-    // ^ indica que a correspondência deve começar no início da string
-    // \d+ corresponde a um ou mais dígitos
-    // (?:[.,]\d+)? corresponde a um ponto ou vírgula seguido por um ou mais dígitos (parte decimal), que é opcional (o ? no final)
-    // $ indica que a correspondência deve terminar no final da string
-    const regex = /^\d+(?:[.,]\d+)?$/;
-  
-    // Testa se o valor corresponde à expressão regular
-    return regex.test(valor);
-  }
-  
-  // Função de exemplo para converter uma string em número (caso seja válida)
-  function converterParaNumero(texto) {
-    if (validarNumero(texto)) {
-      // Remove vírgulas e substitui pontos por pontos decimais
-      const valorFormatado = texto.replace(',', '.');
-      return parseFloat(valorFormatado);
-    } else {
-      // Retorna NaN (não é um número) se a entrada for inválida
-      return NaN;
-    }
-  }
+
