@@ -2,27 +2,19 @@
 
  ---- Descrição do projeto ----
 
- Este projeto foi basedo na ideia de desenlvolver  uma Webpage que contém um conversor de moedas , sendo assim é uma aplicação simples que permite aos usuários converter valores entre diferentes moedas estrangeiras. Esta ferramenta é útil para viajantes, comerciantes e qualquer pessoa que precise lidar com transações financeiras internacionais.
+ Este projeto desenvolvido para ser uma web page que contém um conversor de moedas. É uma aplicação simples que permite usuários a converter valores entre diferentes moedas ao redor do mundo. Esta ferramenta é útil para viajantes, comerciantes e outros usuários que precisem lidar com transações financeiras internacionais.
 
- O produto desenvolvido pelo grupo foi uma Webpage que contém um conversor de moedas,  nomeadamente, Golden Currency Converter.
-
- Observamos que a maioria das páginas que provêm este serviço contêm muitas informações, 
- tornando elas poluídas e confusas.
- Dessa forma, buscamos trazer um produto com design simples e claro, que trouxesse
- a informação de forma objetiva e de fácil entendimento.
-
+ Como há muitas páginas disponíveis oferencendo a mesma ideia de produto, procuramos desenvolver produto simples e objetivo, visando agilidade e facilidade no uso e com funcionalidades inovadoras que faça o nosso produto se destacar aos demais já presentes no mercado.
 
  ---- Funcionalidades do projeto ----
 
- Ao fazer uso da API, conseguimos garantir ao usuário os valores atuais das moedas
- na hora da conversão.
+ Ao fazer uso da API, conseguimos garantir ao usuário os valores atuais das moedas na hora da conversão.
 
- Foram desenvolvidos módulos claro e dark, permitindo o usuário escolher a forma que ele prefere visualizar a página.
+ Foram desenvolvidos modo noturno e diurno, permitindo o usuário escolher a forma que ele prefere visualizar a página.
 
- Também desenvolvemos uma seleção rápida que preenche o valor desejado com valores pré-determinados.
- 
- Por fim, foram utilizados recursos gráficos, as bandeiras, que reforçam ao usuário as moedas que ele está convertendo.
- 
+ Também desenvolvemos uma seleção rápida de valores e conversões mais populares, no objetivo de otimicar o tempo do usuário.
+
+ Além disso, utilizamos ícones e imagens para deixar o design mais acolhedor..
 
  ---- Tecnologias utilizadas ----
 
@@ -32,17 +24,11 @@
     - CSS
     - javaScript
 
- -  IDE:
+ - IDE:
 
     - Visual Studio Code
 
  - Figma
-   
-
- ---- Inicialização ----
-
- O usuário irá inserir o valor no campo  " valor" e informar quais as moedas ele gostaria de converter.
-
  
  ---- Colaboradores ----
 
