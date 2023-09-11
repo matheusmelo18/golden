@@ -27,7 +27,7 @@
         background: none;
       }
     </style>
-    <title>golden</title>
+    <title>Document</title>
   </head>
   <body>
     <div class="mac-book-air-4">
@@ -51,11 +51,7 @@
       <div class="v-conversao"id="v-convert">0.00</div>
       <div class="upper-box"></div>
       
-      <div class="real-brasileiro-euro">Real Brasileiro -&gt; Euro</div>
-      <div class="real-brasileiro-libra-esterlina">
-        Real Brasileiro -&gt; Libra Esterlina
-      </div>
-      <div class="golden-currency-converter">GOLDEN CURRENCY CONVERTER</div>
+      
       <div class="cota-o-do-dia-wed-30-aug-2023-00-00-01-0000">
         Cotação do dia Wed, 30 Aug 2023 00:00:01 +0000
       </div>
@@ -65,11 +61,7 @@
       <div class="to-equals" id="to-v">Insira um valor </div>
       <div class="to-from" id="t-f">1 BRL = 0,20000 USD</div>
       <img id="logo_l" class="logo" src="logo.png" alt="logo 1" />
-      <div class="real-brasileiro-d-lar-americano">
-        Real Brasileiro -&gt; Dólar Americano
-      </div>
       
-        
       
 
 
@@ -188,7 +180,7 @@
   
 
 
-      <select class="from-box"> 
+      <select class="from-box" id="from"> 
         <option value="">Select a Option...</option>
         <option value="AFN"> AFN - Afegane Afegão </option>
         <option value="MGA"> MGA - Ariary Malgaxe  </option>
@@ -538,10 +530,18 @@
         
       </div>
       <button type="button" class="converter-box" id="convert" >CONVERTER</button>
-      <button class="real-brasileiro-yuan-chin-s">
+      <button class="br-yc" onclick="updateCurrencySelects(BRL,CNY)">
         Real Brasileiro -&gt; Yuan Chinês
       </button>
-
+      <button class="br-us">
+        Real Brasileiro -&gt; Dólar Americano
+      </button>
+      <button class="br-eu">Real Brasileiro -&gt; Euro</button>
+      <button class="br-le">
+        Real Brasileiro -&gt; Libra Esterlina
+      </button>
+      <div class="golden-currency-converter">GOLDEN CURRENCY CONVERTER</div>
+        
 
       
       
