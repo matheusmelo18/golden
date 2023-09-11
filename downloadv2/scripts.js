@@ -23,12 +23,55 @@ function fetchAndConvert() {
             console.log(data);
             const coin =  select2.value;
             const conversao = data.conversion_rates[coin];
+            const inputValue = parseFloat(inputV.value);
+            const convertedValue = inputValue / conversao;
 
-            document.getElementById('v-convert').innerHTML = parseFloat(inputV.value / conversao).toLocaleString('en', {
+            function determinarCasasDecimais(valor) {
+                const valorAbsoluto = Math.abs(valor);
+                if (valorAbsoluto >= 1) {
+                    return 2; // Sempre mostra 2 casas decimais para valores maiores ou iguais a 1
+                } else {
+                    return Math.max(2, Math.ceil(-Math.log10(valorAbsoluto))+1);
+                }
+            }
+            
+            const casasDecimais = determinarCasasDecimais(convertedValue);
+            const formattedValue = convertedValue.toFixed(casasDecimais);
+
+            document.getElementById('v-convert').innerHTML = parseFloat(formattedValue).toLocaleString('en', {
                 style: 'currency',
-                currency: select1.value
+                currency: select1.value,
+                currencyDisplay: 'code',
+                maximumFractionDigits: 8
             });
+            document.getElementById('to-v').innerHTML = parseFloat(inputV.value).toLocaleString('en', {
+                style: 'currency',
+                currency: select2.value,
+                currencyDisplay: 'code',
+                maximumFractionDigits: 8
+            })+ " =";
+            document.getElementById('t-f').innerHTML = parseFloat(1).toLocaleString('en', {
+                style: 'currency',
+                currency: select1.value,
+                currencyDisplay: 'code'
+            })+ " = "+parseFloat(conversao).toLocaleString('en', {
+                style: 'currency',
+                currency: select2.value,
+                currencyDisplay: 'code'
+            });
+            document.getElementById('f-t').innerHTML = parseFloat(1).toLocaleString('en', {
+                style: 'currency',
+                currency: select2.value,
+                currencyDisplay: 'code'
+            })+ " = "+parseFloat(1/conversao).toLocaleString('en', {
+                style: 'currency',
+                currency: select1.value,
+                currencyDisplay: 'code'
+            }); 
+            setFlagByCountryCode1(select1.value);
+            setFlagByCountryCode2(select2.value);     
         });
+            
 };
 
 
@@ -38,24 +81,8 @@ buttonS.addEventListener('click', function() {
     select1.selectedIndex = select2.selectedIndex;
     select2.selectedIndex = auxIndex;
     
-    const coins = select1.value;
-
-
-    fetch(url + coins)
-        .then(function(response) {
-            return response.json();
-        })
-        .then(function(data) {
-            console.log(data);
-            const coin =  select2.value;
-            const conversao = data.conversion_rates[coin];
-
-            document.getElementById('v-convert').innerHTML = parseFloat(inputV.value / conversao).toLocaleString('en', {
-                style: 'currency',
-                currency: select1.value
-            });
+    fetchAndConvert();
             
-        });
 });
 
 switchElement.addEventListener('input',function(){
@@ -162,9 +189,49 @@ const config = { childList: true, characterData: true, subtree: true };
 // Inicia a observação do elemento alvo
 observer.observe(targetNode, config);
 
+function quick1(value) {
+    const inputElement = document.getElementById('i-value-box');
+    inputElement.value = value.toString();
+    
+    fetchAndConvert();
+}
 
 
+function setFlagByCountryCode1(countryCode) {
+    // Extrai os dois primeiros caracteres da sigla em lowercase
+    const countryCodeLower = countryCode.substring(0, 2).toLowerCase();
+    
+    // Crie o URL da imagem da bandeira com base na sigla do país em lowercase
+    const flagImageUrl = `https://flagcdn.com/w160/${countryCodeLower}.png`;
 
+    // Selecione o elemento da bandeira
+    const flagElement = document.querySelector('.flag-1');
+
+    // Defina o atributo 'src' do elemento da bandeira com o URL da imagem da bandeira
+    flagElement.setAttribute('src', flagImageUrl);
+    flagElement.style.display = 'inline';
+
+    // Defina o atributo 'alt' do elemento da bandeira com o nome do país (opcional)
+    flagElement.setAttribute('alt', countryCode);
+}
+
+function setFlagByCountryCode2(countryCode) {
+    // Extrai os dois primeiros caracteres da sigla em lowercase
+    const countryCodeLower = countryCode.substring(0, 2).toLowerCase();
+    
+    // Crie o URL da imagem da bandeira com base na sigla do país em lowercase
+    const flagImageUrl = `https://flagcdn.com/w160/${countryCodeLower}.png`;
+
+    // Selecione o elemento da bandeira
+    const flagElement = document.querySelector('.flag-2');
+
+    // Defina o atributo 'src' do elemento da bandeira com o URL da imagem da bandeira
+    flagElement.setAttribute('src', flagImageUrl);
+    flagElement.style.display = 'inline';
+
+    // Defina o atributo 'alt' do elemento da bandeira com o nome do país (opcional)
+    flagElement.setAttribute('alt', countryCode);
+}
 
 
 
