@@ -52,14 +52,14 @@
       <div class="upper-box"></div>
       
       
-      <div class="cota-o-do-dia-wed-30-aug-2023-00-00-01-0000">
-        Cotação do dia Wed, 30 Aug 2023 00:00:01 +0000
+      <div class="cotação" id="cota">
+        
       </div>
       <img class="flag-1" />
       <img class="flag-2"  />
-      <div class="from-to" id="f-t">1 USD = 5,00 BRL</div>
+      <div class="from-to" id="f-t"></div>
       <div class="to-equals" id="to-v">Insira um valor </div>
-      <div class="to-from" id="t-f">1 BRL = 0,20000 USD</div>
+      <div class="to-from" id="t-f"></div>
       <img id="logo_l" class="logo" src="logo.png" alt="logo 1" />
       
       
@@ -67,7 +67,7 @@
 
 
       
-      <i class="arrowright"></i>
+      <i class="arrowright" id="arrow"></i>
       <svg
   class="dark-mode-icon-dark"
   width="30"
@@ -530,14 +530,14 @@
         
       </div>
       <button type="button" class="converter-box" id="convert" >CONVERTER</button>
-      <button class="br-yc" onclick="updateCurrencySelects(BRL,CNY)">
+      <button class="br-yc" onclick="updateCurrencySelects('BRL','CNY')">
         Real Brasileiro -&gt; Yuan Chinês
       </button>
-      <button class="br-us">
+      <button class="br-us"onclick="updateCurrencySelects('BRL','USD')">
         Real Brasileiro -&gt; Dólar Americano
       </button>
-      <button class="br-eu">Real Brasileiro -&gt; Euro</button>
-      <button class="br-le">
+      <button class="br-eu"onclick="updateCurrencySelects('BRL','EUR')">Real Brasileiro -&gt; Euro</button>
+      <button class="br-le"onclick="updateCurrencySelects('BRL','GBP')">
         Real Brasileiro -&gt; Libra Esterlina
       </button>
       <div class="golden-currency-converter">GOLDEN CURRENCY CONVERTER</div>
