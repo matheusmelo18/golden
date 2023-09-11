@@ -65,6 +65,7 @@
   left: 833px;
   top: 493px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: none;
 }
 .quick-5-box {
   background: #f0efec;
@@ -292,8 +293,8 @@ button:disabled {
   text-align: left;
   font: 600 60px "Inter", sans-serif;
   position: absolute;
-  left: 833px;
-  top: 312px;
+  left: 831px;
+  top: 330px;
 }
 
 #v-convert{
@@ -378,9 +379,10 @@ button:disabled {
   left: 971px;
   top: 493px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: none;
 }
 .from-to {
-  color: #000000;
+  color: #000000bd;
   text-align: left;
   font: 300 18px "Inter", sans-serif;
   position: absolute;
@@ -388,15 +390,15 @@ button:disabled {
   top: 434px;
 }
 .to-equals{
-  color: #000000;
+  color: #000000bd;
   text-align: left;
   font: 300 18px "Inter", sans-serif;
   position: absolute;
   left: 833px;
-  top: 271px;
+  top: 295px;
 }
 .to-from {
-  color: #1f0e0e;
+  color: #000000bd;
   text-align: left;
   font: 300 18px "Inter", sans-serif;
   position: absolute;
