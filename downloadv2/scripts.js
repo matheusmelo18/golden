@@ -4,6 +4,7 @@ const buttonS = document.querySelector('.svg-button');
 var inputV = document.querySelector('.insert-value-box');
 const select1 = document.querySelector('.to-box');
 const select2 = document.querySelector('.from-box');
+const selectq = document.querySelector('.quick-box')
 var autoMode = false;
 
 
@@ -14,6 +15,15 @@ const url = 'https://v6.exchangerate-api.com/v6/7aa6b8fe235ff30eb01826e8/latest/
 function fetchAndConvert() {
     const coins = select1.value;
 
+
+    
+
+    if (!/^[0-9,.]+$/.test(inputV.value)) {
+        alert('Por favor, insira apenas números, ponto ou virgula');
+        return;
+    }
+    
+    
     inputV.value = inputV.value.replace("-","")
     inputV.value = inputV.value.replace(",",".")
     parseFloat(inputV.value);
