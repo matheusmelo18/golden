@@ -326,7 +326,7 @@ button:disabled {
   top: 92px;
   
 }
-.real-brasileiro-yuan-chin-s {
+.br-yc{
   color: #000000;
   text-align: left;
   font: 300 13px "Inter", sans-serif;
@@ -336,7 +336,7 @@ button:disabled {
   top: 124px;
   cursor: pointer;
 }
-.real-brasileiro-euro {
+.br-eu {
   color: #000000;
   text-align: left;
   font: 300 13px "Inter", sans-serif;
@@ -345,7 +345,7 @@ button:disabled {
   left: 356px;
   top: 124px;
 }
-.real-brasileiro-libra-esterlina {
+.br-le {
   color: #000000;
   text-align: left;
   font: 300 13px "Inter", sans-serif;
@@ -412,7 +412,7 @@ button:disabled {
   left: 1110px;
   top: 104px;
 }
-.real-brasileiro-d-lar-americano {
+.br-us {
   color: #000000;
   text-align: left;
   font: 300 13px "Inter", sans-serif;
